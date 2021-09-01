@@ -1,6 +1,5 @@
 #// auth_ Mohamad Janati
-#// AmirHassan Asvadi ;)
-#// Copyright (c) 2020 Mohamad Janati (freaking stupid, right? :|)
+#// Copyright (c) 2020-2021 Mohamad Janati (freaking stupid, right? :|)
 
 
 from __future__ import annotations
@@ -35,7 +34,6 @@ def _rightLinks(self):
 		self.create_link("stats", _("Stats"), self._statsLinkHandler, tip=_("Shortcut key: %s") % "T", id="stats"),
 		self._create_sync_link()
 	]
-	gui_hooks.top_toolbar_did_init_links(links, self)
 	return "\n".join(links)
 
 
